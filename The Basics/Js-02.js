@@ -81,5 +81,11 @@ function unique(array) {
     return newArray;
 }
 
+// 11. Add One
+function addOne(array) {
+    for(let i = 0; i < array.length; i++) {
+        array[i]++;
+    }
+}
 
 
