@@ -101,4 +101,20 @@ function numberOfPizzas(order) {
     return order['pizzas'];
 }
 
+//14.Many Orders
+function numberOfPizzas(orders) {
+    let total = 0;
+    for(let i = 0; i < orders.length; i++) {
+        total += orders[i].pizzas;
+    }
+    return total;
+}
+
+//15.Typed Orders
+const ORDER_TYPES = {
+    PIZZA: 0,
+    WINGS: 1,
+    SALAD: 2,
+}
+
 
