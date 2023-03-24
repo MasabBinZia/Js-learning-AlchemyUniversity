@@ -6,15 +6,7 @@ function startsWithX(string) {
     return false;
 }
 
-// 2: Starts With Casing
-function startsWithX(string) {
-    if(string[0].toLowerCase() === "x") {
-        return true;
-    }
-    return false;
-}
-
-//3: Ends With X
+//2: Ends With X
 function endsWithX(string) {
     if(string[string.length - 1].toLowerCase() === "x") {
         return true;
@@ -22,7 +14,7 @@ function endsWithX(string) {
     return false;
 }
 
-// 4: Is All X
+// 3: Is All X
 function isAllX(string) {
     for(let i = 0; i < string.length; i++) {
         if (string[i].toLowerCase() !== "x") {
@@ -32,12 +24,12 @@ function isAllX(string) {
     return true;
 }
 
-// 5: Find First X
+// 4: Find First X
 function findFirstX(string) {
     return string.indexOf('x');
 }
 
-// 6: Split at X
+// 5: Split at X
 function splitAtX(string) {
     const index = string.indexOf('x');
     const a = string.slice(0,index);
@@ -45,10 +37,10 @@ function splitAtX(string) {
     return (a.length > b.length) ? a : b;
 }
 
-// 7:Create Array
+// 6:Create Array
 const array = [1,2,3];
 
-//8:Has One
+//7:Has One
 function hasOne(array) {
     for(let i = 0; i < array.length; i++) {
         if(array[i] === 1) {
@@ -58,7 +50,7 @@ function hasOne(array) {
     return false;
 }
 
-//9:Sum Even
+//8:Sum Even
 function sumEven(array) {
     let sum = 0;
     for(let i = 0; i < array.length; i++) {
@@ -69,7 +61,7 @@ function sumEven(array) {
     return sum;
 }
 
-//10: Unique
+//9: Unique
 function unique(array) {
     let newArray = [];
     for(let i = 0; i < array.length; i++) {
@@ -81,20 +73,32 @@ function unique(array) {
     return newArray;
 }
 
-// 11. Add One
+// 10. Add One
 function addOne(array) {
     for(let i = 0; i < array.length; i++) {
         array[i]++;
     }
 }
 
-// 12. Remove Occurences
+// 11. Remove Occurences
 function removeOccurrences(array, num) {
     for(let i = array.length - 1; i >= 0; i--) {
         if (array[i] === num) {
             array.splice(i, 1);
         }
     }
+}
+
+// 12.Pizza Order
+const order = {
+    pizzas: 3,
+    extraCheese: true,
+    deliveryInstructions: "Round the back, please!",
+};
+
+//13.How Many Pizzas
+function numberOfPizzas(order) {
+    return order['pizzas'];
 }
 
 
