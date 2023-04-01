@@ -67,3 +67,29 @@ function reverse(string) {
 
     return newStr;
 }
+
+// 1: Sum Together
+function sumTogether(arr1, arr2) {
+    let newArr = [];
+
+    for(let i = 0; i < arr1.length; i++) {
+        const sum = arr1[i] + arr2[i];
+        newArr.push(sum);
+    }
+
+    return newArr;
+}
+
+//1: Count the Elements
+function countElements(elements) {
+    let elementCount = {};
+    for(let i = 0; i < elements.length; i++) {
+        if(!elementCount[elements[i]]) {
+            elementCount[elements[i]] = 1;
+        } else {
+            elementCount[elements[i]] += 1;
+        }
+    }
+
+    return elementCount;
+}
