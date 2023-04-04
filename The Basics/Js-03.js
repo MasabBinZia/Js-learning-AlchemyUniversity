@@ -23,4 +23,35 @@ function carCrossing(aCrossing, bCrossing) {
     return (aCrossing && !bCrossing) || (bCrossing && !aCrossing);
 }
 
-// 
+// 1: Throw an Error
+function throwError() {
+    throw new Error("Bad, no good!");
+}
+
+// 2: Catch An Error
+function catchError(fn) {
+    try {
+        fn();
+    }
+    catch(ex) {
+        
+    }
+}
+
+//3: Return Error
+function catchError(fn) {
+    try {
+        fn();
+    }
+    catch(ex) {
+        return ex;
+    }
+    return false;
+}
+
+//4: Start an Error
+function startError() {
+    let x = 3;
+    x();
+}
+
