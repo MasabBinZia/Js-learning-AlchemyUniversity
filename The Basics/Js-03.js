@@ -55,3 +55,40 @@ function startError() {
     x();
 }
 
+// 1: String to Number
+function toNumber(string) {
+    return Number(string) || 0;
+}
+
+
+// 2: To String
+function combineToString(a, b) {
+    return a + '' + b;
+}
+
+// 3: Is Truthy 
+function isTruthy(a) {
+    if(a) {
+        return true;
+    }
+    return false;
+}
+
+// 4: Loose Equals
+function looseEquals(a, b) {
+    return a == b;
+}
+
+// 5: Object to JSON
+function toJSON(obj) {
+    return JSON.stringify(obj);
+}
+
+// 6: Valid JSON
+const personJSON = `
+    {
+        "name": "Dan",
+        "age": 29,
+        "isReal": true
+    } 
+`;
