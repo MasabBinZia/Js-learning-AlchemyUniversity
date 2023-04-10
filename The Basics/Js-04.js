@@ -135,3 +135,103 @@ Shape.prototype.move = function (x, y) {
     this.position.y += y;
 }
 
+//1: Hero
+class Hero {
+    constructor() {
+        this.health = 50;
+    }
+}
+
+
+// 2: Take Damage
+class Hero {
+    constructor() {
+        this.health = 50;
+    }
+    takeDamage(damage) {
+        this.health -= damage;
+    }
+}
+
+
+// 3: Warrior
+const Hero = require('./Hero');
+
+class Warrior extends Hero {
+    
+}
+
+class Hero {
+    constructor() {
+        this.health = 50;
+    }
+    takeDamage(damage) {
+        this.health -= damage;
+    }
+}
+
+// 4: Super Warrior
+const Hero = require('./Hero');
+
+class Warrior extends Hero {
+    constructor() {
+        super();
+        this.rage = 0;
+    }
+}
+
+class Hero {
+    constructor() {
+        this.health = 50;
+    }
+    takeDamage(damage) {
+        this.health -= damage;
+    }
+}
+
+// 5: Building Rage
+const Hero = require('./Hero');
+
+class Warrior extends Hero {
+    constructor() {
+        super();
+        this.rage = 0;
+    }
+
+    takeDamage(damage) {
+        super.takeDamage(damage);
+        this.rage += 1;
+    }
+}
+
+class Hero {
+    constructor() {
+        this.health = 50;
+    }
+    takeDamage(damage) {
+        this.health -= damage;
+    }
+}
+
+// 6: Passing Health
+const Hero = require('./Hero');
+
+class Warrior extends Hero {
+    constructor(health) {
+        super(health);
+        this.rage = 0;
+    }
+
+    takeDamage(damage) {
+        super.takeDamage(damage);
+        this.rage += 1;
+    }
+}
+class Hero {
+    constructor(health) {
+        this.health = health;
+    }
+    takeDamage(damage) {
+        this.health -= damage;
+    }
+}
