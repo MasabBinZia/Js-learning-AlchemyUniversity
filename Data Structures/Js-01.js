@@ -49,3 +49,51 @@ function sortByMonth(array) {
         return MONTHS.indexOf(a.month) - MONTHS.indexOf(b.month);
     });
 }
+
+// 1: Plus One
+function plusOne(arr) {
+    return arr.map(x => x+1);
+}
+
+// 2: Square Root
+function squareRoot(arr) {
+    return arr.map(Math.sqrt);
+}
+
+//3: Squared
+function squared(n) {
+    return n * n;
+}
+
+
+// 4: Squared Map
+const squared = require('./squared');
+
+function squaredMap(arr) {
+    return arr.map(squared);
+}
+
+//5: Add Score
+function addScore(players) {
+    return players.map((x) => {
+        x.score += 10;
+        return x;
+    });
+}
+
+//6: Add Score Index
+function addScore(arr) {
+    return arr.map((x, i) => {
+        if(i <= 2) {
+            x.score += 10;
+        }
+        return x;
+    });
+}
+
+// 1: Less Than 5
+function lessThanFive(array) {
+    return array.filter((el) => {
+        return el < 5;
+    });
+}
