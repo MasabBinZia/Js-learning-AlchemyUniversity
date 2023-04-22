@@ -97,3 +97,39 @@ function lessThanFive(array) {
         return el < 5;
     });
 }
+
+
+// 2: Only True
+function onlyTrue(array) {
+    return array.filter((el) => {
+        return el;
+    });
+}
+
+// 3: Short Strings
+function shortStrings(array) {
+    return array.filter((string) => {
+        return string.length <= 3;
+    });
+}
+
+// 4: Top Students
+function topStudents(array) {
+    return array.filter((student) => {
+        return student.grade >= 90;
+    });
+}
+
+// 5: First Three
+function firstThree(array) {
+    return array.filter((str, i) => {
+        return i < 3;
+    });
+}
+
+// 6: Unique
+function unique(array) {
+    return array.filter((str, i) => {
+        return array.indexOf(str) === i;
+    });
+}
